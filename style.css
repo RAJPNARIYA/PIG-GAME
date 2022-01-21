@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #333;
+  background: linear-gradient(to top left, #464fd1d8 0%, #cd36e08e 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+}
+
+.player {
+  width: 350px;
+  height: 450px;
+  margin: 12px;
+  background-color: transparent;
+  border: 1px solid #d14646fd;
+  color: blue;
+  position: absolute;
+}
+h2 {
+  font-size: 40px;
+}
+
+.player--1 {
+  top: 15%;
+  left: 25%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.player--2 {
+  top: 15%;
+  right: 27.05%;
+  padding-top: 20px;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.603);
+}
+
+.score--1 {
+  position: absolute;
+  top: 25%;
+  left: 37%;
+  font-size: 40px;
+  color: red;
+}
+
+.score--2 {
+  position: absolute;
+  top: 25%;
+  right: 39%;
+  font-size: 40px;
+  color: red;
+}
+
+.current {
+  height: 80px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: brown;
+  color: aliceblue;
+  font-size: 30px;
+  position: absolute;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.current--1 {
+  top: 50%;
+  left: 32.6%;
+}
+
+.current--2 {
+  top: 50%;
+  right: 33.6%;
+}
+
+button {
+  width: 110px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: brown;
+  color: aliceblue;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+.newgame {
+  position: absolute;
+  top: 25%;
+  left: 45.9%;
+}
+
+.roldice {
+  position: absolute;
+  top: 45%;
+  left: 45.9%;
+}
+
+.hold {
+  position: absolute;
+  top: 52%;
+  left: 45.9%;
+}
+
+.diceimg {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 47.3%;
+  top: 33%;
+}
+
+.hidden {
+  display: none;
+}
+
+.winner {
+  background-color: #333;
+  color: red;
+}
